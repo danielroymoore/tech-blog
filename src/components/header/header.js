@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => (
     <div className={headerStyles.container}>
       <h1 className={headerStyles.h1}>
         <Link to="/" className={headerStyles.link}>
-          {siteTitle}
+          <Image fileName="logo.svg" altText="Logo" />
         </Link>
       </h1>
 
