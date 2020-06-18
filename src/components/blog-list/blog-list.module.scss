@@ -16,6 +16,10 @@
 
 .heading {
   color: #fcba04;
+
+  @media only screen and (max-width: 500px) {
+    font-size: 1.4rem;
+  }
 }
 
 .ctaLink {

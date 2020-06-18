@@ -1,17 +1,18 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
-import Image from "../image"
+import logo from "../../images/logo.svg"
+import github from "../../images/github.svg"
+import twitter from "../../images/twitter.svg"
 
 import headerStyles from "./header.module.scss"
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header>
     <div className={headerStyles.container}>
       <h1 className={headerStyles.h1}>
         <Link to="/" className={headerStyles.link}>
-          <Image fileName="logo.svg" altText="Logo" />
+          <img src={logo} altText="Logo" />
         </Link>
       </h1>
 
@@ -21,26 +22,18 @@ const Header = ({ siteTitle }) => (
           target="_blank"
           rel="noreferrer"
         >
-          <Image fileName="github.svg" altText="Github Social Icon" />
+          <img src={github} altText="Github Social Icon" />
         </a>
         <a
           href="https://twitter.com/RookPainting"
           target="_blank"
           rel="noreferrer"
         >
-          <Image fileName="twitter.svg" altText="Twitter Social Icon" />
+          <img src={twitter} altText="Twitter Social Icon" />
         </a>
       </div>
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

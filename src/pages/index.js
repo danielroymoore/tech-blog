@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
   })
 
   const welcomeBody =
-    "Quisque quis nibh ligula. Mauris vehicula leo vel lectus volutpat porttitor. Cras ac tristique risus, sed venenatis eros. Duis fringilla mauris quis ornare pretium. Nam placerat egestas ex vel vehicula. Vestibulum luctus risus vitae sem molestie faucibus. Integer quis orci justo."
+    "I'm a UK based Software Engineer whose main focus is on Front End development. Software never stands still, so I have created this blog to keep myself accountable to the goal of always striving to improve, and not becoming complacent."
 
   return (
     <Layout>
