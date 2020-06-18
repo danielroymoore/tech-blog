@@ -9,7 +9,7 @@ const BlogList = ({ title, blogs, showLink }) => (
     <div className={blogListStyles.header}>
       <h2 className={blogListStyles.heading}>{title}</h2>
       {showLink && (
-        <Link to="/blog" className={blogListStyles.cta}>
+        <Link to="/blog" className={blogListStyles.ctaLink}>
           <h4>View All</h4>
         </Link>
       )}
@@ -23,6 +23,11 @@ const BlogList = ({ title, blogs, showLink }) => (
         </Link>
       </div>
     ))}
+    {showLink && (
+      <Link to="/blog" className={blogListStyles.ctaButton}>
+        <button>View All</button>
+      </Link>
+    )}
   </>
 )
 
