@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <ContentBlock body={welcomeBody} />
       <BlogList
-        title={`Latest Blogs (3 of ${blogCount})`}
+        title={`Latest Blogs (${blogs.length} of ${blogCount})`}
         blogs={blogs}
         showLink
       />
